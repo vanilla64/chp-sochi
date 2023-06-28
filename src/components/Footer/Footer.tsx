@@ -8,8 +8,8 @@ import mailIcon from '../../assets/ion_mail.svg'
 
 export const Footer: FC = () => {
   return (
-    <footer>
-      <LayoutWrapper classStr="py-[25px]">
+    <footer className="bg-[#2D2D2D]">
+      <LayoutWrapper classStr="pt-[25px] pb-[0px]">
         <div className="flex items-center justify-between">
           <Image className="w-[112px] h-[112px] mr-[45px]" src={footerLogo} alt="Footer logo" />
           <Navigation />
@@ -20,6 +20,7 @@ export const Footer: FC = () => {
           <SocialMediaLinks />
         </div>
       </LayoutWrapper>
+      <p className="text-center text-[#E7E7E7] py-[14px] bg-[#202020]">&copy;{` ${new Date().getFullYear()} Все права защищены`}</p>
     </footer>
   )
 }
