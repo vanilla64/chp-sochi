@@ -1,12 +1,7 @@
-import React, {ReactNode} from 'react';
-import {NextPage} from "next";
-import Image from "next/image";
-import Navigation from "@/components/Navigation/Navigation";
-import logo from "@/assets/header-logo.svg";
-import { LayoutWrapper } from "@/components/LayoutWrapper/LayoutWrapper";
-import { SocialMediaLinks } from "@/components/SocialMediaLinks/SocialMediaLinks";
-import {Header} from "@/components/Header/Header";
-import {Footer} from "@/components/Footer/Footer";
+import React, { ReactNode } from 'react';
+import { NextPage } from "next";
+import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
 
 interface Props {
   children: ReactNode

@@ -1,4 +1,8 @@
-import { IHighLightItem } from "@/components/HighLightsAndGridNews/types";
+import { IHighLightItem, IHighLightsGridItem } from "@/components/HighLightsAndGridNews/types";
+import highlightImg1 from '../../assets/mock/highlights/highlight-1.png'
+import highlightImg2 from '../../assets/mock/highlights/highlight-2.png'
+import highlightImg3 from '../../assets/mock/highlights/highlight-3.png'
+import highlightImg4 from '../../assets/mock/highlights/highlight-4.png'
 
 export const highLightConfig: IHighLightItem[] = [
   {
@@ -20,5 +24,28 @@ export const highLightConfig: IHighLightItem[] = [
   {
     text: 'Тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.',
     icon: 'lighting',
+  },
+]
+
+export const highLightGridConfig: IHighLightsGridItem[] = [
+  {
+    tag: 'Эксклюзив',
+    text: 'Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать так типографику в деле.',
+    img: highlightImg1,
+  },
+  {
+    tag: 'Эксклюзив',
+    text: 'Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать так типографику в деле.',
+    img: highlightImg2,
+  },
+  {
+    tag: 'Эксклюзив',
+    text: 'Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать так типографику в деле.',
+    img: highlightImg3,
+  },
+  {
+    tag: 'Эксклюзив',
+    text: 'Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать так типографику в деле.',
+    img: highlightImg4,
   },
 ]

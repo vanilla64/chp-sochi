@@ -1,5 +1,5 @@
-import React, {CSSProperties, ReactNode} from 'react';
-import {NextPage} from "next";
+import React, { ReactNode } from 'react';
+import { NextPage } from "next";
 
 interface Props {
   children: ReactNode

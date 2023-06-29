@@ -16,7 +16,7 @@ export const HighLightItem: FC<IHighLightItem> = ({ text, icon }) => {
   }
 
   return (
-    <li className="flex mb-[11px]">
+    <li className="flex mb-[11px] last:mb-0">
       <Image className="w-[17px] h-[17px] mt-[3px] mr-[8px]" src={setIcon()} alt="Play Icon" />
       <p className="text-sm text-[#E7E7E7]">{text}</p>
     </li>

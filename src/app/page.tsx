@@ -1,15 +1,12 @@
-import Image from 'next/image'
-import Navigation from "@/components/Navigation/Navigation"
-import logo from '../assets/header-logo.png'
-import {PageLayout} from "@/app/PageLayout";
-import {LayoutWrapper} from "@/components/LayoutWrapper/LayoutWrapper";
-import {PageTitle} from "@/components/PageTitle/PageTitle";
-import {HighLightsAndGridNews} from "@/components/HighLightsAndGridNews/HighLightsAndGridNews";
+import { PageLayout } from "@/app/PageLayout";
+import { HighLightsAndGridNews } from "@/components/HighLightsAndGridNews/HighLightsAndGridNews";
+import { NewsWithShowMore } from "@/components/NewsWithShowMore/NewsWithShowMore";
 
 export default function Home() {
   return (
     <PageLayout>
       <HighLightsAndGridNews />
+      <NewsWithShowMore />
     </PageLayout>
   )
 }

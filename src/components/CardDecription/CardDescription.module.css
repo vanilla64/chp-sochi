@@ -1,0 +1,17 @@
+.description {
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+.description_size_s {
+  -webkit-line-clamp: 2; /* Число отображаемых строк */
+  max-height: 40px;
+  margin: 6px 0 13px;
+}
+
+.description_size_m {
+  -webkit-line-clamp: 3; /* Число отображаемых строк */
+  max-height: 60px;
+  margin: 12px 0 16px;
+}

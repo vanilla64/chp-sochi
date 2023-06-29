@@ -9,7 +9,7 @@ import mailIcon from '../../assets/ion_mail.svg'
 export const Footer: FC = () => {
   return (
     <footer className="bg-[#2D2D2D]">
-      <LayoutWrapper classStr="pt-[25px] pb-[0px]">
+      <LayoutWrapper classStr="py-[25px]">
         <div className="flex items-center justify-between">
           <Image className="w-[112px] h-[112px] mr-[45px]" src={footerLogo} alt="Footer logo" />
           <Navigation />
