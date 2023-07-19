@@ -3,7 +3,7 @@
 import React, { FC } from 'react';
 import { smallNewsFakeData } from "@/mock/newsMock";
 import { SmallNewsItem } from "@/components/SmallNewsItem/SmallNewsItem";
-import { useResize } from "@/hooks/useResize";
+import useResize from "@/hooks/useResize";
 
 export const NewsMini: FC = () => {
   const width = useResize()

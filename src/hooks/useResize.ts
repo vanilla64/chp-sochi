@@ -1,14 +1,9 @@
-'use client'
-
 import { useState, useEffect } from "react";
 
-export const useResize = () => {
-  const [width, setWidth] = useState<number>(window.screen.width)
-  const [isLoaded, setIsLoaded] = useState<boolean>(false)
-  const resizeHandler = (evt: UIEvent) => {
-    const target = evt.target as Window
-    setWidth(target.innerWidth)
-  }
+const useResize = () => {
+  const [width, setWidth] = useState<number>(global?.window && window.innerWidth)
+
+  const resizeHandler = () => setWidth(window.innerWidth)
 
   useEffect(() => {
     window.addEventListener('resize', resizeHandler)
@@ -17,3 +12,5 @@ export const useResize = () => {
 
   return width
 }
+
+export default useResize

@@ -3,7 +3,7 @@
 import React, { FC } from 'react';
 import { secondaryNewsFakeData } from "@/mock/newsMock";
 import { NewsItemGridCard } from "@/components/NewsItemGridCard/NewsItemGridCard";
-import { useResize } from "@/hooks/useResize";
+import useResize from "@/hooks/useResize";
 
 export const BottomNewsList: FC = () => {
   const width = useResize()
