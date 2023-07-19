@@ -7,7 +7,6 @@ import useResize from "@/hooks/useResize";
 
 export const SecondaryNews = () => {
   const width = useResize()
-  console.log(width)
 
   const getColspan = () => {
     if (width < 1025 && width >= 551) return 6
