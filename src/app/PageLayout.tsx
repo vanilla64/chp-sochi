@@ -10,7 +10,7 @@ export const PageLayout: NextPage<Props> = ({ children }) => {
   return (
     <body>
       <Header />
-      <main className="flex min-h-[55vh] flex-col items-center justify-between">{children}</main>
+      <main className="flex flex-col items-center justify-between">{children}</main>
       <Footer />
     </body>
   )

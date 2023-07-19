@@ -1,54 +1,73 @@
+'use client'
+
 import React, { FC } from 'react';
 import { LayoutWrapper } from "@/components/LayoutWrapper/LayoutWrapper";
-import { CardDescription } from "@/components/CardDecription/CardDescription";
-import { Overlay } from "@/components/Overlay/Overlay";
-import { CardBgImage } from "@/components/CardBgImage/CardBgImage";
-import { newsFakeData } from "@/components/NewsWithShowMore/mock";
+import { newsFakeData } from '@/mock/newsMock';
+import { NewsItemGridCard } from "@/components/NewsItemGridCard/NewsItemGridCard";
+import { NewsSlider } from "@/components/NewsSlider/NewsSlider";
+import { SwiperSlide } from "swiper/react";
 
 export const NewsWithShowMore: FC = () => {
   return (
     <section className="w-full">
       <LayoutWrapper>
-        <div className="grid gap-7 grid-cols-6 grid-rows-2">
+        <ul className="grid gap-7 grid-cols-6 grid-rows-2 max-md:hidden">
           {
             newsFakeData.map((
               { date, text, tag, img }, index
             ) => {
               if (index <= 1) return (
-                <div
+                <NewsItemGridCard
                   key={Math.random() * index}
-                  className="bg-[#2D2D2D] col-span-3 min-h-[412px] rounded-[15px] relative overflow-hidden"
-                >
-                  <CardBgImage img={img} />
-                  <Overlay />
-                  <CardDescription
-                    date={date}
-                    tag={tag}
-                    text={text}
-                    size="m"
-                  />
-                </div>
+                  date={date}
+                  text={text}
+                  tag={tag}
+                  img={img}
+                  height={412}
+                  colSpan={3}
+                  size="m"
+                />
               )
 
               return (
-                <div
+                <NewsItemGridCard
                   key={Math.random() * index}
-                  className="bg-[#2D2D2D] col-span-2 min-h-[412px] rounded-[15px] relative overflow-hidden"
-                >
-                  <CardBgImage img={img} />
-                  <Overlay />
-                  <CardDescription
-                    date={date}
-                    tag={tag}
-                    text={text}
-                    size="m"
-                    withBackground
-                  />
-                </div>
+                  date={date}
+                  text={text}
+                  tag={tag}
+                  img={img}
+                  height={412}
+                  colSpan={2}
+                  size="m"
+                  withBackground
+                />
               )
             })
           }
-        </div>
+        </ul>
+
+        <NewsSlider height={412} hideWidth={768}>
+          {
+            newsFakeData.map((
+              { date, text, tag, img }, index
+            ) => {
+              return (
+                <SwiperSlide key={Math.random() * index}>
+                  <NewsItemGridCard
+                    date={date}
+                    text={text}
+                    tag={tag}
+                    img={img}
+                    height={412}
+                    colSpan={2}
+                    size="m"
+                    withBackground
+                  />
+                </SwiperSlide>
+              )
+            })
+          }
+        </NewsSlider>
 
         <button
           className="

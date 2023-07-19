@@ -1,0 +1,53 @@
+.button {
+  width: 24px;
+  height: 20px;
+  position: absolute;
+  right: 14px;
+  top: calc(30% - 10px);
+  z-index: 10;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: .2s;
+}
+
+.line_pos_top {
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+
+.line_pos_top_isOpen_true {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.line_pos_mid {
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.line_pos_mid_isOpen_true {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.line_pos_bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.line_pos_bottom_isOpen_true {
+  bottom: 9px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 640px) {
+  .button {
+    top: calc(24.5% - 10px);
+  }
+}

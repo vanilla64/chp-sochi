@@ -13,6 +13,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    // screens: {
+    //   'iphoneSE': '375px',
+    //   'iphone12pro': '390px',
+    //   'iphoneXR': '414px',
+    //   'ipadAIR': '820px',
+    // },
   },
   plugins: [],
 }

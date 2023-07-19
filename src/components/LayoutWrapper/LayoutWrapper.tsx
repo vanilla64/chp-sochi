@@ -11,6 +11,13 @@ export const LayoutWrapper: NextPage<Props> = ({
   classStr,
 }) => {
   return (
-    <div className={`container mx-[auto] py-[60px] px-[100px] relative ${classStr && classStr}`}>{children}</div>
+    <div
+      className={`
+        relative container mx-[auto] pt-[16px] pb-[30px] px-[14px]
+        xl:py-[60px] xl:px-[100px] ${classStr && classStr}
+      `}
+    >
+      {children}
+    </div>
   )
 }

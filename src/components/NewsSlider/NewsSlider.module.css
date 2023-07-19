@@ -1,0 +1,15 @@
+.slider {
+
+}
+
+@media (min-width: 491px) {
+  .slider_hide_491 {
+    display: none!important;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider_hide_768 {
+    display: none!important;
+  }
+}
