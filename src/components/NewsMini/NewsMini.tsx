@@ -6,7 +6,7 @@ import { SmallNewsItem } from "@/components/SmallNewsItem/SmallNewsItem";
 import { useResize } from "@/hooks/useResize";
 
 export const NewsMini: FC = () => {
-  const width = useResize()
+  const width = useResize(window.screen.width)
 
   return (
     <div
