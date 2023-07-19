@@ -1,7 +1,9 @@
+'use client'
+
 import { useState, useEffect } from "react";
 
-export const useResize = (initialWidth: number) => {
-  const [width, setWidth] = useState<number>(initialWidth)
+export const useResize = () => {
+  const [width, setWidth] = useState<number>(window.screen.width)
   const [isLoaded, setIsLoaded] = useState<boolean>(false)
   const resizeHandler = (evt: UIEvent) => {
     const target = evt.target as Window

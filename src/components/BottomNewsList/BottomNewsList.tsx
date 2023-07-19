@@ -6,7 +6,7 @@ import { NewsItemGridCard } from "@/components/NewsItemGridCard/NewsItemGridCard
 import { useResize } from "@/hooks/useResize";
 
 export const BottomNewsList: FC = () => {
-  const width = useResize(window.screen.width)
+  const width = useResize()
 
   const getBigColSpan = (index: number) => {
     if (width < 769 && width >= 526) return index === 2 ? 12 : 6
